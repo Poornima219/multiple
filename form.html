@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+    <style>
+        body{
+            background-color: rgb(163, 148, 151);
+        }
+        #title{
+            text-align: center;
+        }
+        #box{
+            border:5px solid black;
+            height:600px;
+            width:400px;
+            margin-left: 500px;
+            background-color: rgb(233, 121, 139)
+        }
+        #name-label{
+            text-align:center;
+            padding:50px;
+        }
+        #name{
+            margin:10px;
+            text-align:center;
+            padding:5px;
+        }
+        #email-label{
+            text-align:center;
+            padding:50px;
+        }
+        #email{
+            margin:10px;
+            text-align:center;
+            padding:5px;
+        }
+        #mobile-label{
+            text-align:center;
+            padding:30px;
+        }
+        #number{
+            margin:10px;
+            text-align:center;
+            padding:5px;
+        }
+        
+        #gender{
+            
+            margin-left: 50px;
+            margin-top: 15px;
+        }
+        #your{
+            padding: 10px;
+            margin-left: 40px;
+        }
+        #check{
+            padding: 10px;
+            margin-left: 25px;
+        }
+        #comments{
+            padding:10px;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        button{
+            padding: 10px;
+            margin-left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    
+    <form action="" id="survey-form">
+        <div id="box">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Jon Doe">
+            <br>
+            <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" required placeholder="jjon.doe@gmail.com">
+        <br>
+        <label for="number" id="mobile-label">Mobile No</label>
+        <input type="number" id="number" name="number" required placeholder="Phone No">
+        <br>
+        <!--<select id="dropdown">
+            <option value="value-1">value 1</option>
+            <option value="value-1">value 2</option>
+            <option value="value-1">value 3</option>
+        </select>-->
+        <br>
+        <input type="radio" id="gender" name="gender" value="male">Male
+        <input type="radio" id="gender"name="gender" value="female">Female
+        <input type="radio" id="gender" name="gender" value="rather not say">Rather not say
+        <br>
+        <p id="your">Your Age:</p>
+        <input type="checkbox" id="check" name="age" value=">30">Greater than 30
+        <input type="checkbox" id="check" name="age" value="<30">Less than 30
+        <input type="checkbox" id="check" name="age" value="=30">Equal to 30
+        <br>
+        <textarea name="comments" id="comments" cols="45" rows="10">Comments:</textarea>
+        <br>
+        <br>
+        <button id="submit" type="submit">Submit</button>
+
+        </div>
+        
+    </form>
+</body>
+</html>
